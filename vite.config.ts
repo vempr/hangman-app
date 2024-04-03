@@ -11,4 +11,5 @@ export default defineConfig({
         VITE_RAPIDAPI_KEY: JSON.stringify(process.env.VITE_RAPIDAPI_KEY),
         VITE_RAPIDAPI_HOST: JSON.stringify(process.env.VITE_RAPIDAPI_HOST),
     },
+    base: "/hangman-app/",
 });
