@@ -7,6 +7,7 @@ import WordToGuess from "./components/WordToGuess";
 import Keyboard from "./components/Keyboard";
 import EndScreen from "./components/EndScreen";
 import "./styles/loadingScreen.css";
+import GitHubLogo from "./components/GitHubLogo";
 
 const options = {
     method: "GET",
@@ -91,6 +92,7 @@ export default function App() {
             <div className="fade">
                 {word ? (
                     <div>
+                        <GitHubLogo />
                         <HangmanDrawing incorrect={incorrectLetters.length} />
                         <WordToGuess
                             word={word}
