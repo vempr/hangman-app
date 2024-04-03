@@ -106,7 +106,7 @@
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .hangman-container {
         height: 250px;
         display: flex;
@@ -211,6 +211,109 @@
         position: absolute;
         top: 196px;
         left: calc(50% + 52px);
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+}
+
+@media only screen and (min-height: 900px) {
+    .bottom-bar {
+        width: 140px;
+        height: 7px;
+        background-color: black;
+        position: absolute;
+        top: calc(310px + 10vh);
+        left: calc(50% - 40px);
+        transform: translate(-50%, -50%);
+    }
+
+    .straight-bar {
+        width: 7px;
+        height: 300px;
+        background-color: black;
+        position: absolute;
+        top: calc(160px + 10vh);
+        left: calc(50% - 40px);
+        transform: translate(-50%, -50%);
+    }
+
+    .upper-bar {
+        width: 127px;
+        height: 7px;
+        background-color: black;
+        position: absolute;
+        top: calc(10px + 10vh);
+        left: calc(50% + 20px);
+        transform: translate(-50%, -50%);
+    }
+
+    .hanging-down-bar {
+        width: 7px;
+        height: 30px;
+        background-color: black;
+        position: absolute;
+        top: calc(25px + 10vh);
+        left: calc(50% + 80px);
+        transform: translate(-50%, -50%);
+    }
+
+    .head {
+        width: 50px;
+        height: 50px;
+        border: 5px solid black;
+        border-radius: 40px;
+        position: absolute;
+        top: calc(70px + 10vh);
+        left: calc(50% + 80px);
+        transform: translate(-50%, -50%);
+    }
+
+    .neck-torso {
+        width: 7px;
+        height: 90px;
+        background-color: black;
+        position: absolute;
+        top: calc(140px + 10vh);
+        left: calc(50% + 80px);
+        transform: translate(-50%, -50%);
+    }
+
+    .left-arm {
+        width: 7px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        top: calc(150px + 10vh);
+        left: calc(50% + 60px);
+        transform: translate(-50%, -50%) rotate(30deg);
+    }
+
+    .right-arm {
+        width: 7px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        top: calc(150px + 10vh);
+        left: calc(50% + 100px);
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+
+    .left-leg {
+        width: 7px;
+        height: 90px;
+        background-color: black;
+        position: absolute;
+        top: calc(220px + 10vh);
+        left: calc(50% + 58px);
+        transform: translate(-50%, -50%) rotate(30deg);
+    }
+
+    .right-leg {
+        width: 7px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        top: calc(220px + 10vh);
+        left: calc(50% + 101px);
         transform: translate(-50%, -50%) rotate(-30deg);
     }
 }

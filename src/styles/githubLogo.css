@@ -1,6 +1,7 @@
 a {
     position: absolute;
     left: calc(100vw - 40px);
+    top: 0;
     color: inherit;
 }
 a:visited {
