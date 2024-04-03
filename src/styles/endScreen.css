@@ -1,0 +1,61 @@
+.portalWrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.definitionWrapper {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.reveal {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.meaning {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.example {
+    font-size: 0.9rem;
+}
+
+.playBtn {
+    display: block;
+    margin: 15px auto;
+    padding: 5px 10px 5px 10px;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.playBtn:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .definitionWrapper {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid black;
+        background-color: white;
+    }
+    .example {
+        display: none;
+    }
+}

@@ -1,0 +1,68 @@
+button:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+button:active {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.correctlyChosen {
+    background-color: aqua;
+}
+.correctlyChosen:hover {
+    cursor: default;
+    background-color: aqua;
+}
+
+.incorrectlyChosen {
+    opacity: 0.5;
+}
+.incorrectlyChosen:hover {
+    cursor: default;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    text-align: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+
+    margin: 2px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 200px;
+    }
+    .btn {
+        width: 35px;
+        height: 35px;
+        border: 1px solid black;
+
+        margin: 1px;
+
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 300px;
+    }
+}

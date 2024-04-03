@@ -1,0 +1,35 @@
+.wrapper {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.underline {
+    border-bottom: 0.3rem solid black;
+    margin: 2px;
+}
+
+.letter {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .letter {
+        font-size: 1rem;
+    }
+    .underline {
+        border-bottom: 0.15rem solid black;
+    }
+}
