@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Hangman game built using React. The game provides a visual representation of the hangman's gallows, and the player wins if they guess all the letters correctly before making too many incorrect guesses.
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This game is deployed on GitHub Pages. You can play it [here](https://vempr.github.io/hangman-app/).
 
-## Expanding the ESLint configuration
+## How to Play
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- When the game starts, a random word is fetched from the [Random Words API](https://rapidapi.com/sheharyar566/api/random-words5).
+- Players can click on letters in the virtual keyboard to guess them.
+- Correct guesses fill in the corresponding blank spaces, while incorrect guesses are tallied.
+- The game ends when the player correctly guesses all the letters or makes too many incorrect guesses.
+- Players can start a new game after winning/losing.
 
-- Configure the top-level `parserOptions` property like this:
+## APIs Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- [Random Words API](https://rapidapi.com/sheharyar566/api/random-words5): This API is used to fetch random words for the game.
+- [Dictionary API](https://dictionaryapi.dev/): This API is used for displaying information about the word that was guessed.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Languages
+
+- UI designed with Vanilla CSS and HTML
+- React with TypeScript
+
+## Web Responsiveness
+
+This game is designed to be responsive, adapting to various screen sizes and devices.
+
+## Credits
+
+This game was created by Alex Nguyen (2024). It is licensed under the MIT License:
+
+> _Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br><br> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br><br> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
