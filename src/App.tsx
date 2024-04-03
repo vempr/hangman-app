@@ -12,8 +12,8 @@ const options = {
     method: "GET",
     url: "https://random-words5.p.rapidapi.com/getRandom",
     headers: {
-        "X-RapidAPI-Key": import.meta.env.VITE_RAPIDAPI_KEY,
-        "X-RapidAPI-Host": import.meta.env.VITE_RAPIDAPI_HOST,
+        "X-RapidAPI-Key": "8b047c8f90msha23e816c5aad70fp150c22jsn5fb298b9ff29",
+        "X-RapidAPI-Host": "random-words5.p.rapidapi.com",
     },
 };
 
